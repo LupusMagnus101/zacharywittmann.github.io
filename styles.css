@@ -1,18 +1,17 @@
-/* Reset default spacing */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: white;
 }
 
-/* Top header bar */
+/* Purple header bar */
 .top-bar {
-  background-color: #f2f2f2;
-  padding: 15px 30px;
-  border-bottom: 1px solid #ccc;
+  background-color: purple;
+  padding: 20px 30px;
+  color: white;
 }
 
-/* Profile area inside header */
+/* Profile area layout */
 .profile-area {
   display: flex;
   align-items: center;
@@ -20,19 +19,24 @@ body {
 
 /* Profile image */
 .profile-pic {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%; /* Makes it round */
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
   object-fit: cover;
-  margin-right: 15px;
+  margin-right: 20px;
 }
 
-/* Name styling */
-h1 {
+/* Text info area */
+.info h1 {
   margin: 0;
 }
 
-/* Contact section */
+/* Contact line */
 .contacts {
-  padding: 20px 30px;
+  margin-top: 5px;
+  font-size: 0.9em;
+}
+
+.contacts span {
+  margin-right: 15px;
 }
