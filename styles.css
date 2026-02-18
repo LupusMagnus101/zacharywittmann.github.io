@@ -1,0 +1,38 @@
+/* Reset default spacing */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: white;
+}
+
+/* Top header bar */
+.top-bar {
+  background-color: #f2f2f2;
+  padding: 15px 30px;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Profile area inside header */
+.profile-area {
+  display: flex;
+  align-items: center;
+}
+
+/* Profile image */
+.profile-pic {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%; /* Makes it round */
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+/* Name styling */
+h1 {
+  margin: 0;
+}
+
+/* Contact section */
+.contacts {
+  padding: 20px 30px;
+}
