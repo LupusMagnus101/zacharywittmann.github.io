@@ -9,6 +9,9 @@ body {
   background-color: purple;
   padding: 20px 30px;
   color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .profile-area {
@@ -26,67 +29,108 @@ body {
 
 .contacts a {
   color: white;
-  margin-right: 15px;
+  font-size: 20px;
+  margin-right: 12px;
   text-decoration: none;
+  transition: transform 0.2s ease;
 }
 
 .contacts a:hover {
+  transform: scale(1.2);
+}
+
+/* HEADER NAV */
+.header-nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  opacity: 0.85;
+}
+
+.header-nav a:hover {
+  opacity: 1;
   text-decoration: underline;
 }
 
-/* HERO SECTION */
+/* HERO */
 .hero {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 60px;
+  padding: 80px;
   min-height: 70vh;
 }
 
-.hero-left h1 {
-  font-size: 3em;
+.hero-left {
+  width: 55%;
+}
+
+.hero-name {
+  font-size: 4.2em;
   margin: 10px 0;
 }
 
-.buttons {
+.hero-title {
+  font-size: 1.5em;
+}
+
+/* HERO BUTTON */
+.hero-buttons {
   margin-top: 20px;
 }
 
-.btn {
-  display: inline-block;
-  background-color: purple;
-  color: white;
-  padding: 10px 18px;
-  margin: 5px;
-  border-radius: 6px;
-  text-decoration: none;
+
+/* SKILLS */
+.skills-scroll {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 40%;
+  padding: 20px 30px;
+  border-radius: 25px;
+  background-color: rgba(128, 0, 128, 0.1);
+  overflow-x: auto;
+  gap: 25px;
 }
 
-.btn:hover {
-  background-color: #5a1f7a;
+.skills-scroll i {
+  font-size: 42px;
+  color: purple;
+  transition: transform 0.2s ease;
 }
 
-/* GLOW RING (no photo inside) */
-.glow-ring {
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-  border: 4px solid purple;
-  box-shadow: 0 0 25px purple, 0 0 50px #8a2be2;
+.skills-scroll i:hover {
+  transform: scale(1.3);
 }
 
 /* FOOTER */
 .footer {
   background-color: #f0f0f0;
-  padding: 20px;
-  text-align: center;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
 }
 
-.footer a {
+.footer-left {
+  color: #555;
+}
+
+.footer-nav a {
+  margin: 0 10px;
   color: purple;
   text-decoration: none;
+  opacity: 0.5;
 }
 
-.footer a:hover {
-  text-decoration: underline;
+.footer-nav a:hover {
+  opacity: 1;
+}
+
+.footer-icons a {
+  color: purple;
+  margin-left: 10px;
+  font-size: 18px;
 }
