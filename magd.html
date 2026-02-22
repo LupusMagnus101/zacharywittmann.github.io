@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Zachary Wittmann</title>
+  <title>Computer Science Projects</title>
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -20,16 +20,9 @@
 
     <div class="info">
       <h1>Zachary Wittmann</h1>
-
-      <div class="contacts">
-        <a href="mailto:zacwit03@email.com"><i class="fa-solid fa-envelope"></i></a>
-        <a href="https://github.com/LupusMagnus101" target="_blank"><i class="fa-brands fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/zachary-wittmann" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-      </div>
     </div>
   </div>
 
-  <!-- HEADER NAV -->
   <nav class="header-nav">
     <a href="index.html">HOME</a>
     <a href="compsci.html">COMPSIC</a>
@@ -38,13 +31,49 @@
   </nav>
 </header>
 
-<!-- MAIN AREA -->
-<main class="compsci">
+<main>
+  <h1 class="page-title">MAGD Projects</h1>
 
+  <div class="projects-grid">
 
+    <div class="project-card"
+      onclick="openProject(
+        'Student Database System',
+        'Built in C++ using file handling. Allows adding, deleting, and searching student records. Helped me learn file I/O and data structures.'
+      )">
+      <img src="images/project1.jpg" alt="Student Database Project">
+      <h3>Student Database</h3>
+    </div>
 
+    <div class="project-card"
+      onclick="openProject(
+        'Web Portfolio',
+        'Designed and built this portfolio using HTML, CSS, and JavaScript. Focused on layout, styling, and usability.'
+      )">
+      <img src="images/project2.jpg" alt="Web Portfolio Project">
+      <h3>Web Portfolio</h3>
+    </div>
+
+    <div class="project-card"
+      onclick="openProject(
+        'Unity Game Prototype',
+        'Created a small Unity game prototype using C#. Implemented player movement, UI, and scoring systems.'
+      )">
+      <img src="images/project3.jpg" alt="Unity Game Project">
+      <h3>Unity Game</h3>
+    </div>
+
+  </div>
 </main>
 
+<!-- PROJECT MODAL -->
+<div id="projectModal" class="project-modal">
+  <div class="project-modal-content">
+    <span class="close-btn" onclick="closeProject()">&times;</span>
+    <h2 id="modalTitle"></h2>
+    <p id="modalDescription"></p>
+  </div>
+</div>
 
 <!-- FOOTER -->
 <footer class="footer">
@@ -65,6 +94,9 @@
     <a href="https://www.linkedin.com/in/zachary-wittmann" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
   </div>
 </footer>
+
+
+<script src="script.js"></script>
 
 </body>
 </html>
