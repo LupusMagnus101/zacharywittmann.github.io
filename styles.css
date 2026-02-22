@@ -53,13 +53,13 @@ body {
   text-decoration: underline;
 }
 
-/* HERO */
+/* MAIN */
 .hero {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 80px;
-  min-height: 70vh;
+  padding: 20px;
+  min-height: 50vh;
 }
 
 .hero-left {
