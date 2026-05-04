@@ -4,23 +4,17 @@
   <meta charset="UTF-8">
   <title>Computer Science Projects</title>
 
-  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-  <!-- Devicon -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-
-  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
 <header class="top-bar">
   <div class="profile-area">
-    <img src="images/IMG_2101.JPG" alt="Profile Photo" class="profile-pic">
-
-    <div class="info">
-      <h1>Zachary Wittmann</h1>
-    </div>
+    <img src="images/IMG_2101.JPG" class="profile-pic">
+    <div class="info"><h1>Zachary Wittmann</h1></div>
   </div>
 
   <nav class="header-nav">
@@ -37,75 +31,46 @@
   <div class="projects-grid">
 
     <div class="project-card"
-      onclick="openProject(
-        'Sabermetrics Investing Tool',
-        'Built in C#,Python, API call. Allows the creation of Asset Portfolios, Stragies, and Graph displys. Helped me learn postgres and data structures.'+
-        'This project is a tool for investors that uses sabermetrics principles to analyze and optimize investment portfolios. It allows users to create and manage portfolios, backtest strategies, and visualize performance through graphs.'+
-        'This was a team project where I was responsible for the backend development, including database design'
-      )">
-      <img src="images\Photos\ExFolio_1.png" alt="Sabermetrics Investing Tool Project">
-      <img src="images\Photos\ExFolio_2.png" alt="Sabermetrics Investing Tool Project">
+      data-title="Sabermetrics Investing Tool"
+      data-description="Built in C#,Python, API call. Allows the creation of Asset Portfolios, Stragies, and Graph displys. Helped me learn postgres and data structures. This project is a tool for investors that uses sabermetrics principles to analyze and optimize investment portfolios. It allows users to create and manage portfolios, backtest strategies, and visualize performance through graphs. This was a team project where I was responsible for the backend development, including database design"
+      data-media="images/Photos/ExFolio_1.png">
+
+      <img src="images/Photos/ExFolio_1.png">
       <h3>Sabermetrics Investing Tool</h3>
     </div>
 
     <div class="project-card"
-      onclick="openProject(
-        'Unity Based datavase archive site',
-        'Designed and built this portfolio using C#, SQL. Focused on layout, Database queries, and usability.'+
-        'This project was shocasing my and my aprnter Unity and SQL skills. It is a database archive site built in Unity that allows users to search and view archived games form steam in an interactive way.'+
-        'I worked on the backend development, including database design and query optimization, as well as some frontend UI work.'
-      )">
-      <img src="images\Photos\Database_1.png" alt="Unity Database Archive Site Project">
-      <img src="images\Photos\Database_2.png" alt="Unity Database Archive Site Project">
+      data-title="Unity Based datavase archive site"
+      data-description="Designed and built this portfolio using C#, SQL. Focused on layout, Database queries, and usability. This project was shocasing my and my aprnter Unity and SQL skills. It is a database archive site built in Unity that allows users to search and view archived games form steam in an interactive way. I worked on the backend development, including database design and query optimization, as well as some frontend UI work."
+      data-media="images/Photos/Database_1.png">
+
+      <img src="images/Photos/Database_1.png">
       <h3>Unity Database Archive Site</h3>
     </div>
 
     <div class="project-card"
-      onclick="openProject(
-        'Chess Game',
-        'Created a chess game in C++. Implemented game logic, move validation. This was aconsole based chess game that allowed two players to play against each other. It included features such as move validation, and a simple text-based interface.'+
-        'This was a solo project where I was responsible for all aspects of development, including game logic implementation and user interface design.'+
-        'This project helped me improve my understanding of C++ programming, data structures, and game development principles.'
-)">
-      <img src="images\Photos\Chess_1.png" alt="Unity Game Project">
-      <img src="images\Photos\Chess_2.png" alt="Unity Game Project">
+      data-title="Chess Game"
+      data-description="Created a chess game in C++. Implemented game logic, move validation. This was aconsole based chess game that allowed two players to play against each other. It included features such as move validation, and a simple text-based interface. This was a solo project where I was responsible for all aspects of development, including game logic implementation and user interface design. This project helped me improve my understanding of C++ programming, data structures, and game development principles."
+      data-media="images/Photos/Chess_1.png">
+
+      <img src="images/Photos/Chess_1.png">
       <h3>Chess Game</h3>
     </div>
 
   </div>
 </main>
 
-<!-- PROJECT MODAL -->
 <div id="projectModal" class="project-modal">
   <div class="project-modal-content">
     <span class="close-btn" onclick="closeProject()">&times;</span>
     <h2 id="modalTitle"></h2>
+    <div id="modalMedia"></div>
     <p id="modalDescription"></p>
   </div>
 </div>
 
-<!-- FOOTER -->
-<footer class="footer">
-  <div class="footer-left">
-    © Zachary Wittmann
-  </div>
-
-  <div class="footer-nav">
-    <a href="index.html">HOME</a>
-    <a href="compsci.html">COMPSIC</a>
-    <a href="magd.html">MAGD</a>
-    <a href="it.html">IT</a>
-  </div>
-
-  <div class="footer-icons">
-    <a href="mailto:zacwit03@email.com"><i class="fa-solid fa-envelope"></i></a>
-    <a href="https://github.com/LupusMagnus101" target="_blank"><i class="fa-brands fa-github"></i></a>
-    <a href="https://www.linkedin.com/in/zachary-wittmann" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-  </div>
-</footer>
-
+<footer class="footer">...</footer>
 
 <script src="script.js"></script>
-
 </body>
 </html>

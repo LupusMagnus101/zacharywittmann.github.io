@@ -2,25 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Computer Science Projects</title>
+  <title>IT Projects</title>
 
-  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-  <!-- Devicon -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-
-  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
 <header class="top-bar">
   <div class="profile-area">
-    <img src="images/IMG_2101.JPG" alt="Profile Photo" class="profile-pic">
-
-    <div class="info">
-      <h1>Zachary Wittmann</h1>
-    </div>
+    <img src="images/IMG_2101.JPG" class="profile-pic">
+    <div class="info"><h1>Zachary Wittmann</h1></div>
   </div>
 
   <nav class="header-nav">
@@ -37,66 +31,46 @@
   <div class="projects-grid">
 
     <div class="project-card"
-      onclick="openProject(
-        'University Esports Computer Setup',
-        'Add details'
-      )">
-      <img src="images\Photos\Esports_1.png" alt="University Esports Computer Setup Project">
+      data-title="University Esports Computer Setup"
+      data-description="Add details"
+      data-media="images/Photos/Esports_1.png">
+
+      <img src="images/Photos/Esports_1.png">
       <h3>University Esports Computer Setup</h3>
     </div>
 
     <div class="project-card"
-      onclick="openProject(
-        'Personal Computer Build',
-        'Add details'
-      )">
-      <img src="images\Photos\Personal_Computer_1.png" alt="Personal Computer Build Project">
+      data-title="Personal Computer Build"
+      data-description="Add details"
+      data-media="images/Photos/Personal_Computer_1.png">
+
+      <img src="images/Photos/Personal_Computer_1.png">
       <h3>Personal Computer Build</h3>
     </div>
 
     <div class="project-card"
-      onclick="openProject(
-        'In Progress IT Project',
-        'Created a small Unity game prototype using C#. Implemented player movement, UI, and scoring systems.'
-      )">
-      <img src="images\Photos\public-domain-vectors-V7D6s4B-LP4-unsplash.png" alt="In Progress IT Project">
+      data-title="In Progress IT Project"
+      data-description="Created a small Unity game prototype using C#. Implemented player movement, UI, and scoring systems."
+      data-media="images/Photos/public-domain-vectors-V7D6s4B-LP4-unsplash.png">
+
+      <img src="images/Photos/public-domain-vectors-V7D6s4B-LP4-unsplash.png">
       <h3>In Progress IT Project</h3>
     </div>
 
   </div>
 </main>
 
-<!-- PROJECT MODAL -->
 <div id="projectModal" class="project-modal">
   <div class="project-modal-content">
     <span class="close-btn" onclick="closeProject()">&times;</span>
     <h2 id="modalTitle"></h2>
+    <div id="modalMedia"></div>
     <p id="modalDescription"></p>
   </div>
 </div>
 
-<!-- FOOTER -->
-<footer class="footer">
-  <div class="footer-left">
-    © Zachary Wittmann
-  </div>
-
-  <div class="footer-nav">
-    <a href="index.html">HOME</a>
-    <a href="compsci.html">COMPSIC</a>
-    <a href="magd.html">MAGD</a>
-    <a href="it.html">IT</a>
-  </div>
-
-  <div class="footer-icons">
-    <a href="mailto:zacwit03@email.com"><i class="fa-solid fa-envelope"></i></a>
-    <a href="https://github.com/LupusMagnus101" target="_blank"><i class="fa-brands fa-github"></i></a>
-    <a href="https://www.linkedin.com/in/zachary-wittmann-23708b238 target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-  </div>
-</footer>
-
+<footer class="footer">...</footer>
 
 <script src="script.js"></script>
-
 </body>
 </html>
